@@ -17,7 +17,7 @@ public class ElementaryArithmetic {
         }
         return (double) a / b;
     }
-    public void evenandodd1(int a){
+    public void evenandodd(int a){
         if (a % 2 == 0){
             System.out.println(a+"is even");
 
@@ -25,18 +25,6 @@ public class ElementaryArithmetic {
         else {
             System.out.println(a+"is odd");
         }
-
-
-    }
-    public void evenandodd2(int b){
-        if (b % 2 == 0){
-            System.out.println(b+"is even");
-
-        }
-        else {
-            System.out.println(b+"is odd");
-        }
-
 
     }
 
