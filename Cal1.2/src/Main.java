@@ -11,7 +11,8 @@ public class Main {
             System.out.println("Enter two numbers: ");
             int num1 = scn.nextInt();
             int num2 = scn.nextInt();
-
+            calcu.evenandodd1(num1);
+            calcu.evenandodd2(num2);
             System.out.println("Addition: " + calcu.add(num1, num2));
             System.out.println("Subtraction: " + calcu.subtract(num1, num2));
             System.out.println("Multiplication: " + calcu.multiply(num1, num2));
