@@ -13,16 +13,10 @@ public class Main {
             int num2 = scn.nextInt();
             calcu.evenandodd(num1);
             calcu.evenandodd(num2);
-            System.out.println("Addition: " + calcu.add(num1, num2));
-            System.out.println("Subtraction: " + calcu.subtract(num1, num2));
-            System.out.println("Multiplication: " + calcu.multiply(num1, num2));
-
-            if (num2 != 0) {
-                double division = calcu.divide(num1, num2);
-                System.out.printf("Division: %.3f\n", division);
-            } else {
-                System.out.println("Cannot divide by zero!");
-            }
+            calcu.add(num1,num2);
+            calcu.subtract(num1,num2);
+            calcu.multiply(num1,num2);
+            calcu.divide(num1,num2);
 
             while (true) {
                 System.out.println("New calculation? (Type 'Yes' to continue or 'No' to exit)");

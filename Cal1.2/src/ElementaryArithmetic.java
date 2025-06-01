@@ -1,29 +1,32 @@
 public class ElementaryArithmetic {
-    public int add(int a, int b) {
-        return a + b;
+    public void add(int a, int b) {
+        System.out.println("Addition: " + (a + b));
     }
 
-    public int subtract(int a, int b) {
-        return a - b;
+    public void subtract(int a, int b) {
+        System.out.println("Subtraction: " + (a - b));
     }
 
-    public int multiply(int a, int b) {
-        return a * b;
+    public void multiply(int a, int b) {
+        System.out.println("Multiplication: " + (a * b));
     }
 
-    public double divide(int a, int b) {
+    public void divide(int a, int b) {
         if (b == 0) {
-            throw new ArithmeticException("Cannot divide by zero!");
+            System.out.println("Cannot divide by zero!");
+        } else {
+            double Div = (double) a / b;
+            System.out.printf("Division: %.3f\n", Div);
         }
-        return (double) a / b;
     }
-    public void evenandodd(int a){
-        if (a % 2 == 0){
-            System.out.println(a+"is even");
+
+    public void evenandodd(int number){
+        if (number % 2 == 0){
+            System.out.println(number+" is even");
 
         }
         else {
-            System.out.println(a+"is odd");
+            System.out.println(number+" is odd");
         }
 
     }
