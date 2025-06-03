@@ -23,9 +23,15 @@ public class ElementaryArithmetic {
         if (b == 0) {
             System.out.println("Cannot perform modulus by zero!");
         } else {
-            System.out.println("Modulus: " + (a % b));
+            double mod = (double) a % b;
+            if (mod == (int) mod) {
+                System.out.println("Modulus: " + (int) mod);
+            } else {
+                System.out.printf("Modulus: %.3f\n", mod);
+            }
         }
     }
+
 
     public void evenandodd(int number){
         if (number % 2 == 0){
