@@ -31,6 +31,20 @@ public class ElementaryArithmetic {
             }
         }
     }
+    public void isPrime(int number) {
+        if (number <= 1) {
+            System.out.println(number + " is not a prime number.");
+            return;
+        }
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                System.out.println(number + " is not a prime number.");
+                return;
+            }
+        }
+        System.out.println(number + " is a prime number.");
+    }
+
 
 
     public void evenandodd(int number){

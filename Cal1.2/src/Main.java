@@ -18,7 +18,8 @@ public class Main {
             calcu.multiply(num1,num2);
             calcu.divide(num1,num2);
             calcu.modulus(num1,num2);
-
+            calcu.isPrime(num1);
+            calcu.isPrime(num2);
             while (true) {
                 System.out.println("New calculation? (Type 'Yes' to continue or 'No' to exit)");
                 response = scn.next();
