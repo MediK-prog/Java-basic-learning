@@ -17,6 +17,7 @@ public class Main {
             calcu.subtract(num1,num2);
             calcu.multiply(num1,num2);
             calcu.divide(num1,num2);
+            calcu.modulus(num1,num2);
 
             while (true) {
                 System.out.println("New calculation? (Type 'Yes' to continue or 'No' to exit)");

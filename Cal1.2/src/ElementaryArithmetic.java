@@ -19,6 +19,13 @@ public class ElementaryArithmetic {
             System.out.printf("Division: %.3f\n", Div);
         }
     }
+    public void modulus(int a, int b) {
+        if (b == 0) {
+            System.out.println("Cannot perform modulus by zero!");
+        } else {
+            System.out.println("Modulus: " + (a % b));
+        }
+    }
 
     public void evenandodd(int number){
         if (number % 2 == 0){
